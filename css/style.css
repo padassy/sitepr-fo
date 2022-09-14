@@ -1,3 +1,4 @@
+/* Fond page index*/
 .fond {background-image:url(../fondindex.png);
      
      background-repeat: no-repeat;
@@ -5,14 +6,16 @@
      background-size: cover;
      text-align: center;
      padding: auto;
-     border: 5px solid black;
+     border: 5px solid #2a364e;
      min-width: 1750px;
      max-width: 1750px;
      min-height: 984px;
      max-height: 984px;
      position: absolute;
+     border-radius: 10px;
 }
 
+/*Boutons carte index */
 button {
      height: 20px;
      width: 20px;
@@ -21,14 +24,17 @@ button {
      border-style: none;
      text-align: justify;
      overflow: hidden;
-     opacity: 0;
+     opacity: 0.1;
 }
-
+ 
+/*bouton vers intro */
 .button0 {position: absolute;
           top: 82.5%;
           left: 15.5%;
          }
           
+
+/*Bouton vers Cf2m*/
 
 .button1 {
      position: absolute;
@@ -37,6 +43,7 @@ button {
      z-index: auto;
 }
 
+/*Bouton vers interview*/
 .button2 {
      position: absolute;
      top: 56.5%;
@@ -45,6 +52,8 @@ button {
 
 }
 
+/*bouton vers exposition*/
+
 .button3 {
      position: absolute;
      top: 36.6%;
@@ -52,19 +61,21 @@ button {
      z-index: auto;
 }
 
+/*bouton vers galerie*/
 .button4 {
      position: absolute;
      top: 23.8%;
      left :64.4%;
 }
 
+/*bouton vers ma conclusion */
 .button5 {
      position: absolute;
      top: 24.9%;
      left: 79.8%;
 }
 
-
+/*Survol boutons */
 button:hover{ background-color: #f59516;
               cursor: pointer;
               transform:scale(2);
@@ -72,17 +83,129 @@ button:hover{ background-color: #f59516;
               
 }
 
-body {background-color: #0c2342}
+/*Couleur fond page hors index*/
+body {background-color: #0c2342;
+     font-family: 'Source Sans Pro', sans-serif;}
 
-ul {list-style: none;
-    }
+/*Menu nav*/
 
-li {
+ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #414d61;
+     border-radius: 10px;
+     max-width: 1750px;
+     border: 5px solid #2a364e;
+ }
+ 
+ li {
+     float: left;
+     border-right: 1px solid #f59516;
+     font-size: large;
+
+ }
+ 
+ li a {
      display: inline-block;
-     border: 3px solid black;
-     width: 150px;
-     height: 30px;
+     color: #f3b131;
      text-align: center;
-     
+     padding: 14px 16px;
+     text-decoration: none;
 
+ }
+
+ 
+ /* Change the link color to #111 (black) on hover */
+ li a:hover {
+     background-color: #596375;
+ }
+
+ .Active {
+     background-color: #89909d;
+ }
+
+/* page exposition main */
+
+.expomain {
+     border-radius: 10px;
+     padding: 1em 1em;
+     margin: auto;
+     background-image: url(../photo/fond_main_expo_.png);
+     border: 5px solid #64686d;
+     background-repeat: no-repeat;
 }
+
+/*page exposition header*/
+
+.headexpo {
+     background-color: #ded9d1;
+     border: 5px solid #64686d;
+     border-radius: 10px;
+     padding: 1em 1em;
+     margin: auto;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-style: italic;
+     font-size: larger;
+}
+
+/*.exposection disposition*/
+
+.exposection {
+     display: flex;
+     flex-direction: column;
+     align-items: stretch;
+}
+
+/*Image expo*/
+
+.imageexpo {float: left;}
+
+article {
+     border: 5px solid #64686d ;
+     border-radius: 10px;
+     background-color: #d0d2d8bd ;
+     padding: 10px 50px;
+     align-items: center;
+     margin-bottom: 50px;
+     font-size: large;
+     font-weight: 300;
+     line-height: 2em;
+}
+
+
+/*h1*/
+
+h1 { text-align: center;
+}
+
+.minicarte { float: left;
+     
+}
+
+/* espace article phto*/
+
+article img {
+     margin-right: 30px;
+}
+
+/* Taille 1ere lettre article*/
+
+.lettrearticle {
+     font-size: x-large;
+     float: left;
+     border: 1px solid black;
+}
+
+/*Fond header*/
+
+header {background-color: #ded9d1;
+        border: 5px solid #64686d;
+        border-radius: 10px;
+        padding: 1em 1em;
+        margin: auto;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: italic;
+        font-size: larger;
+     }

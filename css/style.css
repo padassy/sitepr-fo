@@ -1,5 +1,5 @@
 /* Fond page index*/
-.fond {background-image:url(../fondindex.png);
+.fond {background-image:url(../photo/fondindex.png);
      
      background-repeat: no-repeat;
      height:  100vh;
@@ -25,14 +25,25 @@ button {
      text-align: justify;
      overflow: hidden;
      opacity: 0.1;
+     font-family: 'Satisfy', cursive;
+     text-decoration: none;
+}
+
+button a {
+     text-decoration: none;
+     color: #0c2342;
 }
  
 /*bouton vers intro */
 .button0 {position: absolute;
           top: 82.5%;
           left: 15.5%;
+
          }
-          
+
+/*Bouton index deja visite*/
+
+button a:visited {color: #0c2342;}
 
 /*Bouton vers Cf2m*/
 
@@ -96,7 +107,7 @@ ul {
      overflow: hidden;
      background-color: #414d61;
      border-radius: 10px;
-     max-width: 1750px;
+     min-width: 1750px;
      border: 5px solid #2a364e;
  }
  
@@ -104,6 +115,8 @@ ul {
      float: left;
      border-right: 1px solid #f59516;
      font-size: large;
+     text-align: center;
+     
 
  }
  
@@ -126,17 +139,10 @@ ul {
      background-color: #89909d;
  }
 
-/* page exposition main */
+/* body expo*/
 
-.expomain {
-     border-radius: 10px;
-     padding: 1em 1em;
-     margin: auto;
-     background-image: url(../photo/fond_main_expo_.png);
-     border: 5px solid #64686d;
-     background-repeat: no-repeat;
-}
-
+.bodyexpo {background-image: url(../photo/fondbodyexpo.png);
+          background-size: cover;}
 /*page exposition header*/
 
 .headexpo {
@@ -144,11 +150,24 @@ ul {
      border: 5px solid #64686d;
      border-radius: 10px;
      padding: 1em 1em;
-     margin: auto;
-     font-family: 'Source Sans Pro', sans-serif;
-     font-style: italic;
+     font-family: 'Raleway', sans-serif;
      font-size: larger;
 }
+
+/* page exposition main */
+
+.expomain {
+     border-radius: 10px;
+     padding: 1em 1em;
+     margin: auto;
+     border: 5px solid #64686d;
+     max-width: 1200px;
+     background-color: #89909da6;
+     ;
+   
+
+}
+
 
 /*.exposection disposition*/
 
@@ -156,6 +175,7 @@ ul {
      display: flex;
      flex-direction: column;
      align-items: stretch;
+     z-index: 1;;
 }
 
 /*Image expo*/
@@ -169,15 +189,20 @@ article {
      padding: 10px 50px;
      align-items: center;
      margin-bottom: 50px;
-     font-size: large;
+     font-size:medium;
      font-weight: 300;
-     line-height: 2em;
+     line-height: 1.5em;
+}
+/*Comportement logo eb!*/
+
+br+a {
+     float: left;;
 }
 
 
 /*h1*/
 
-h1 { text-align: center;
+h1 {padding-left: 130px;
 }
 
 .minicarte { float: left;
@@ -195,7 +220,8 @@ article img {
 .lettrearticle {
      font-size: x-large;
      float: left;
-     border: 1px solid black;
+     font-family: 'Raleway', sans-serif;
+
 }
 
 /*Fond header*/
@@ -205,7 +231,75 @@ header {background-color: #ded9d1;
         border-radius: 10px;
         padding: 1em 1em;
         margin: auto;
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Raleway', sans-serif;
         font-style: italic;
         font-size: larger;
      }
+
+/*Page intro*/
+
+h2 a {
+     text-decoration: none;
+     color: #0c2342;
+}
+
+h2 a:visited {
+     color: #0c2342;
+}
+
+.bodyintro {
+     display: flex;
+     margin-top: 350px;
+     margin-left: 25%;
+     margin-right:25%;
+     align-content: flex-start;
+     font-family: 'Raleway', sans-serif;
+     font-weight: 500;
+}
+
+.fondintro { background-image: url(../photo/fond_intro.png);
+     border: 10px solid white;
+     padding: 30px;
+ }
+
+.pageintro h1 {
+     padding: 30px;
+}
+
+.pageintro h2 {
+     padding: 30px;
+}
+
+.pageintro{
+     width: 400px;
+     height: 250px;
+     max-width: 1100px;
+     align-content: flex-start;
+     padding: 30px;
+     
+     
+}
+
+/*Page interview*/
+
+.sectioninterview {
+     display: flex;
+     flex-direction: column;
+     background-image: url(../photo/fondinterview.png);
+     
+}
+
+
+
+.articleinterview {
+     float: left;
+     max-width: 1200px;
+}
+
+/*Page galerie*/
+
+.maingalerie {
+     background-image: url(../photo/fondgalerie.png);
+}
+
+

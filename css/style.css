@@ -1,3 +1,9 @@
+/*Couleur fond page hors index*/
+body {background-color: #0c2342;
+     font-family: 'Source Sans Pro', sans-serif;
+     max-width: 1750px;}
+
+
 /* Fond page index*/
 .fond {background-image:url(../photo/fondindex.png);
      
@@ -91,12 +97,9 @@ button:hover{ background-color: #f59516;
               cursor: pointer;
               transform:scale(2);
               opacity: 1;
-              
 }
 
-/*Couleur fond page hors index*/
-body {background-color: #0c2342;
-     font-family: 'Source Sans Pro', sans-serif;}
+
 
 /*Menu nav*/
 
@@ -108,7 +111,7 @@ ul {
      background-color: #414d61;
      border-radius: 10px;
      min-width: 1750px;
-     border: 5px solid #2a364e;
+     
  }
  
  li {
@@ -141,8 +144,13 @@ ul {
 
 /* body expo*/
 
-.bodyexpo {background-image: url(../photo/fondbodyexpo.png);
-          background-size: cover;}
+.bodyexpo {max-width: 1750px;
+          background-image: url(../photo/fondbodyexpo.png);
+          background-size: cover;
+          
+     }
+
+
 /*page exposition header*/
 
 .headexpo {
@@ -160,7 +168,6 @@ ul {
      border-radius: 10px;
      padding: 1em 1em;
      margin: auto;
-     border: 5px solid #64686d;
      max-width: 1200px;
      background-color: #89909da6;
      ;
@@ -183,7 +190,6 @@ ul {
 .imageexpo {float: left;}
 
 article {
-     border: 5px solid #64686d ;
      border-radius: 10px;
      background-color: #d0d2d8bd ;
      padding: 10px 50px;
@@ -296,10 +302,44 @@ h2 a:visited {
      max-width: 1200px;
 }
 
+.articleliens {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     max-width: 1200px;
+}
 /*Page galerie*/
+
+#galerie { display: flex;
+     justify-content: space-around;
+
+}
+
+.articlegalerie {
+     max-width: 600px;
+}
 
 .maingalerie {
      background-image: url(../photo/fondgalerie.png);
+     max-width: 1750px;
 }
 
+
+
+
+/*Page conclusion*/
+
+#mainconclu {
+     background-image: url(../photo/fondmyself.jpg);
+     background-size: contain;
+     max-width: 1750px;
+     max-height:1000px;
+     min-width: 1750px;
+     min-height: 1000px;
+}
+
+.sectionconclusion {
+     max-width: 1200px;
+     float: right;
+}
 
